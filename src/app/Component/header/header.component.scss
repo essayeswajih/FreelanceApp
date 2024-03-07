@@ -1,0 +1,86 @@
+/* Default styles */
+nav {
+    transition-duration: 500ms;
+    height: auto;
+    width: 100vw;
+    margin: 0;
+    padding: 7px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    backdrop-filter: blur(10px);
+}
+
+.boxShadow {
+    box-shadow: 0 0px 7px gray;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    max-height: 70px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    max-height: 70px;
+    padding-right: 15px;
+}
+
+li {
+    transition-duration: 500ms;
+    padding: 5px;
+    padding-top: 10px;
+    height: auto;
+}
+
+button {
+    transition-duration: 300ms;
+    background-color: rgba(172, 187, 187, 0.121);
+    background-color: transparent;
+    border: 1px solid rgba(128, 128, 128, 0.543);
+    border: none;
+    padding: 3px 9px;
+    border-radius: 5px;
+    padding-top: 1px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+button:hover {
+    background-color: rgba(172, 187, 187, 0.121);
+}
+
+img {
+    margin-top: 3px;
+    width: auto;
+    height: 45px;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    nav {
+        height: 70px;
+    }
+    .row,
+    ul {
+        height: 70px;
+        max-height: 70px;
+        padding-right: 0;
+    }
+    li {
+        padding-top: 20px;
+    }
+    button {
+        padding: 5px 15px;
+        font-size: 1.2rem;
+    }
+}
